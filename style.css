@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Orange500: hsl(25, 97%, 53%);
+    --White: hsl(0, 100%, 100%);
+    --Grey500: hsl(216, 5%, 21%);
+    --Grey900: hsl(213, 19%, 18%);
+    --Grey950: hsl(216, 12%, 8%);
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--Grey950);
+    color: white;
+    display: grid;
+    place-items: center;
+    font-family: "Overpass", sans-serif;
+}
+.rating-container,.sucess-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    background-color: var(--Grey900);
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 400px;
+    margin-inline: 1rem;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.button{
+    text-align: center;
+    background-color: var(--Orange500);
+    padding: 10px;
+    border-radius: 20px;
+    color: var(--Grey900);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.box{
+    width: 40px;
+    height: 40px;
+    background-color: var(--Grey500);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover,.button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.inactive-container{
+    display: none;
+}
+.active-container{
+    display: flex;
+}
+.sucess-container .img{
+    display: flex;
+    justify-content: center;
+}
+.para{
+    padding: 0.5rem;
+    background-color: var(--Grey500);
+    text-align: center;
+    border-radius: 10px;
+    color: var(--Orange500);
+}
+h2{
+    text-align: center;
+}
+.para2{
+    text-align: center;
+    color: rgb(142, 139, 139);
+}
+.errors{
+    color: red;
+    text-align: end;
+    margin-bottom: 10px;
+    display: none;
+}
+.active-error{
+    display: block;
+}
