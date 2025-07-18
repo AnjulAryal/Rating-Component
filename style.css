@@ -20,14 +20,14 @@ body{
     place-items: center;
     font-family: "Overpass", sans-serif;
 }
-.rating-container,.sucess-container{
+.rating-container,.success-container{
     display: flex;
     flex-direction: column;
-    row-gap: 30px;
+    row-gap: 1.8rem;
     background-color: var(--Grey900);
-    padding: 30px;
-    border-radius: 20px;
-    max-width: 400px;
+    padding: 1.8rem;
+    border-radius: 10%;
+    max-width: 25rem;
     margin-inline: 1rem;
 }
 .buttons{
@@ -37,15 +37,15 @@ body{
 .button{
     text-align: center;
     background-color: var(--Orange500);
-    padding: 10px;
-    border-radius: 20px;
+    padding: 0.625rem;
+    border-radius: 1.25rem;
     color: var(--Grey900);
     font-weight: bold;
-    letter-spacing: 2px;
+    letter-spacing: 0.125rem;
 }
 .box{
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     background-color: var(--Grey500);
     border-radius: 50%;
     display: flex;
@@ -68,7 +68,7 @@ body{
 .active-container{
     display: flex;
 }
-.sucess-container .img{
+.success-container .img{
     display: flex;
     justify-content: center;
 }
@@ -76,7 +76,7 @@ body{
     padding: 0.5rem;
     background-color: var(--Grey500);
     text-align: center;
-    border-radius: 10px;
+    border-radius: 0.5rem;
     color: var(--Orange500);
 }
  h2{
@@ -89,7 +89,7 @@ body{
 .errors{
     color: red;
     text-align: end;
-    margin-bottom: 10px;
+    margin-block-end: 0.7rem;
     display: none;
 }
 .active-error{
