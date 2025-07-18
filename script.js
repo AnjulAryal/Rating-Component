@@ -10,10 +10,8 @@ boxes.forEach((box)=>{
     box.addEventListener(("click"),()=>{
         ratingNumber = box.getAttribute("rating-number");
         rating.textContent = ratingNumber;
-
-    })
-})
-button.addEventListener(("click"),()=>{
+        box.classList.add("select");
+        button.addEventListener(("click"),()=>{
     if(rating.textContent===""){
         const error = document.querySelector("#error");
         error.classList.add("active-error")
@@ -25,8 +23,11 @@ button.addEventListener(("click"),()=>{
             sucessContainer.classList.remove("active-container");
             sucessContainer.classList.add("inactive-container");
             ratingContainer.classList.add("active-container");
-             error.classList.remove("active-error")
+            error.classList.remove("active-error");
+            box.classList.remove("select");
         },5000)
     }
 
+})
+    })
 })
